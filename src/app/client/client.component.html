@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <br><br>
+  <div class="jumbotron">
+    <h1><strong>Liste des Clients </strong></h1><br><br>
+    <div>
+
+
+      <table class="table table-bordered">
+        <thead>
+        <tr class="table-warning">
+
+          <th scope="col"><span class="glyphicon glyphicon-user">Nom</span></th>
+
+          <th scope="col"> <span class="glyphicon glyphicon-envelope">Email</span></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let c of customers._embedded.customers">
+          <td>{{c.name}}</td>
+          <td>{{c.email}}</td>
+
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+
+</div>
+
+

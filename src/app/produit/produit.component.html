@@ -1,0 +1,28 @@
+<div class="container">
+  <br><br>
+  <div class="jumbotron">
+    <h1><strong>Liste des Produits </strong></h1><br><br>
+    <div>
+      <table class="table table-bordered">
+        <thead>
+        <tr class="table-warning">
+          <th scope="col"><span class="glyphicon glyphicon-user">Nom</span></th>
+          <th scope="col"><span class="glyphicon glyphicon-euro"></span> Prix</th>
+          <th scope="col"><span class="glyphicon glyphicon-plus"></span> Quantité</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of products._embedded.products">
+          <td>{{p.name}}</td>
+          <td>{{p.price}}</td>
+          <td>{{p.quantity}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>
+
+
